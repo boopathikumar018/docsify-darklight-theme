@@ -1,7 +1,7 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "0.0.1",
-  "description": "Powers docsify with dark and light mode with switch",
+  "version": "0.0.2",
+  "description": "Enables docsify with dark and light mode with switch",
   "main": "dist/index.js",
   "scripts": {
     "fixlint": "standard --fix",
