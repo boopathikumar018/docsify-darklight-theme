@@ -1,3 +1,4 @@
+
 <h1 align="center"> docsify-darklight-theme </h1>
 
 <p align="center" >
@@ -22,19 +23,105 @@
 
 <p align="center"> A Dark and light theme with switch for your docsify site</p>
 
-# What it is
 
-**docsify-darklight-theme** provides <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> `dark-mode`  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> `light-mode` with switcher, so you can switch between these modes. Follow the [Installation guide](https://boopathikumar018.github.io/docsify-darklight-theme/#/installation) to setup
+**docsify-darklight-theme**  is a simple and highly customizable theme for the documentation websites generated using [docsify.js](https://docsify.js.org/). Using this theme, documents will have a theme switcher to switch between  `dark-mode` and `light-mode` .
 
 # Features
 
-- Theme switcher
-- Theme customizable using docsify config object
-- Config Default theme
-- Theme remember
-- Redesigned searchbox
+- Theme switcher 
+- Themes are customizable based on your color preferences
+- Preferences can be modified directly in `window.$docsify` configuration object
+- Default theme(Dark/Light) can be configured based on your needs.
+- Themes are remembered and retrieved from local storage.
+- Redesigned search box.
 
+# Installation
+
+Add the below `stylesheet` on top of the `index.html` file 
+
+```html
+<link 
+    rel="stylesheet"
+    href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
+    title="docsify-darklight-theme"
+    type="text/css"
+/>
+```
+> Note : Remove all `stylesheets` included on top of `index.html` if you have any conflict with above CSS file
+
+Add the below `script` file on bottom of the `index.html` file 
+
+```html
+<script 
+    src="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/index.min.js"
+    type="text/javascript">
+</script>
+```
+
+
+# Configuration
+
+You can customize the color preference for your document by modified the colors in **window.$docsify**configuration object for both dark and light mode. 
+
+### Variable structure
+
+In your **docsify config object** on `index.html` add the below object with your own variables as follows:
+
+```js
+
+    window.$docsify = {
+
+        // ...
+
+            darklightTheme: {
+
+                defaultTheme : 'light | dark',
+                dark: {
+                    <your_variable> : <value>
+                },
+                light: {
+                    <your_variable> : <value>
+                }
+
+            }
+
+        // ...
+
+    };
+
+```
+
+### Default themes configuration
+
+```js
+
+    window.$docsify = {
+
+        darklightTheme: {
+
+            defaultTheme : 'light',
+            dark: {
+                background: '#091a28',
+                textColor: '#b4b4b4',
+                codeTextColor : '#ffffff',
+                codeBackgroudColor : '#0e2233',
+                borderColor : '#0d2538'
+            },
+            light: {
+                background: 'white',
+                textColor: '#34495e',
+                codeTextColor : '#525252',
+                codeBackgroudColor : '#f8f8f8',
+                borderColor : 'rgba(0, 0, 0, 0.07)'
+            }
+        }
+```
+
+# Release notes
+
+View the [Change log](https://boopathikumar018.github.io/docsify-darklight-theme/#/changelog) to know the details of each versions.
 
 # License
 
-[MIT](https://opensource.org/licenses/MIT) © [Boopathi Kumar](https://www.linkedin.com/in/boopathikumar)
+This project is licensed under the terms of the [MIT](https://github.com/boopathikumar018/docsify-darklight-theme/blob/master/LICENSE) license.
+ © [Boopathi Kumar](https://www.linkedin.com/in/boopathikumar)
