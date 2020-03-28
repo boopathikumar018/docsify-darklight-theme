@@ -1,15 +1,17 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "0.0.2",
+  "version": "0.0.10",
   "description": "Enables docsify with dark and light mode with switch",
   "main": "dist/index.js",
   "scripts": {
     "fixlint": "standard --fix",
     "test": "standard",
-    "prebuild": "del-cli dist ",
+    "prebuild": "del-cli dist",
     "build": "npm run build:css && npm run build:js",
-    "build:js": "rollup docs/js/index.js -o dist/index.min.js && rollup docs/js/index.js -o docs/js/index.min.js --config rollup.config.js",
-    "build:css": "postcss docs/css/style.css -o dist/style.min.css && postcss docs/css/style.css -o docs/css/style.min.css --config postcss.config.js"
+    "build:js": "rollup docs/js/index.js -o dist/index.min.js --config rollup.config.js && rollup docs/js/index.js -o docs/js/index.min.js --config rollup.config.js",
+    "build:css": "postcss docs/css/style.css -o dist/style.min.css --config postcss.config.js && postcss docs/css/style.css -o docs/css/style.min.css --config postcss.config.js",
+    "postbuild": "cpy docs/css/style.css dist/",
+    "postinstall": "cpy dist ../../docsify-darklight-theme/"
   },
   "files": [
     "dist"
@@ -17,8 +19,8 @@
   "keywords": [
     "docsify",
     "plugin",
-    "darkmode",
-    "lightmode",
+    "dark-mode",
+    "light-mode",
     "theme",
     "docsify-plugin"
   ],
@@ -30,10 +32,12 @@
     ],
     "globals": [
       "localStorage",
-      "document"
+      "document",
+      "cpy"
     ]
   },
   "repository": "boopathikumar018/docsify-darklight-theme",
+  "homepage": "boopathikumar018.github.io/docsify-darklight-theme",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "cssnano": "^4.1.10",
@@ -43,7 +47,10 @@
     "postcss-preset-env": "^6.7.0",
     "rollup": "^1.31.1",
     "rollup-plugin-terser": "^5.2.0",
-    "standard": "^14.3.1"
+    "standard": "^14.3.1",
+    "cpy-cli": "^3.1.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "cpy-cli": "^3.1.0"
+  }
 }
