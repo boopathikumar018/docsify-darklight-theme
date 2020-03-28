@@ -25,7 +25,7 @@
 - Themes are customizable based on your color preferences
 - Preferences can be modified directly in `window.$docsify` configuration object
 - Default theme(Dark/Light) can be configured based on your needs.
-- Themes are remembered and     retrieved from local storage.
+- Themes are remembered and retrieved from local storage.
 - Redesigned search box.
 
 # Installation
