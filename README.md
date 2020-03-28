@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <h1 align="center"> docsify-darklight-theme </h1>
 
 <p align="center">
@@ -51,8 +50,3 @@ Add below `script` on bottom of the `index.html` file
     type="text/javascript">
 </script>
 ```
-=======
-# docsify-darklight-theme
-
-> A Dark and light theme with switch for your docsify site
->>>>>>> 751309afd5372dcc074f0aed1b01e69589f28b66
