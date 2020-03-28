@@ -1,3 +1,4 @@
+
 <h1 align="center"> docsify-darklight-theme </h1>
 
 <p align="center">
@@ -15,23 +16,21 @@
 
 <p align="center"> A Dark and light theme with switch for your docsify site</p>
 
-# What it is
 
-**docsify-darklight-theme** provides `dark-mode` and `light-mode` with switcher, so you can switch between these modes
+**docsify-darklight-theme**  is a simple and highly customizable theme for the documentation websites generated using [docsify.js](https://docsify.js.org/). Using this theme, documents will have a theme switcher to switch between  `dark-mode` and `light-mode` .
 
 # Features
 
-- Theme switcher
-- Theme customizable using docsify config object
-- Config Default theme
-- Theme rememberer
-- Redesigned searchbox
+- Theme switcher 
+- Themes are customizable based on your color preferences
+- Preferences can be modified directly in `window.$docsify` configuration object
+- Default theme(Dark/Light) can be configured based on your needs.
+- Themes are remembered and     retrieved from local storage.
+- Redesigned search box.
 
 # Installation
 
-> Note : Remove all `stylesheets` included on top of `index.html` if you have any conflict with below CSS file
-
-Add below `stylesheet` on top of the `index.html` file 
+Add the below `stylesheet` on top of the `index.html` file 
 
 ```html
 <link 
@@ -41,8 +40,9 @@ Add below `stylesheet` on top of the `index.html` file
     type="text/css"
 />
 ```
+> Note : Remove all `stylesheets` included on top of `index.html` if you have any conflict with above CSS file
 
-Add below `script` on bottom of the `index.html` file 
+Add the below `script` file on bottom of the `index.html` file 
 
 ```html
 <script 
@@ -51,9 +51,10 @@ Add below `script` on bottom of the `index.html` file
 </script>
 ```
 
+
 # Configuration
 
-You can configure the colors for light and dark mode using **docsify config object** as follows.
+You can customize the color preference for your document by modified the colors in **window.$docsify**configuration object for both dark and light mode. 
 
 ### Variable structure
 
@@ -111,3 +112,12 @@ In your **docsify config object** on `index.html` add the below object with your
     };
 
 ```
+# Release notes
+
+View the [Change log](https://boopathikumar018.github.io/docsify-darklight-theme/#/changelog) to know the details of each versions.
+
+# License
+
+This project is licensed under the terms of the [MIT](https://github.com/boopathikumar018/docsify-darklight-theme/blob/master/LICENSE) license.
+
+
