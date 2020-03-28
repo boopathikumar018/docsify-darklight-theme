@@ -1,17 +1,24 @@
 
 <h1 align="center"> docsify-darklight-theme </h1>
 
+<p align="center" >
+    <a target="_blank" href="https://boopathikumar018.github.io/docsify-darklight-theme/"> Docs & Preview</a> |
+    <a target="_blank" href="https://boopathikumar018.github.io/docsify-darklight-theme/#/changelog"> Changelog</a>
+</p>
+
+
 <p align="center">
-    <a href="https://www.jsdelivr.com/package/npm/docsify-darklight-theme">
+    <a target="_blank" href="https://www.jsdelivr.com/package/npm/docsify-darklight-theme">
         <img src="https://data.jsdelivr.com/v1/package/npm/docsify-darklight-theme/badge?style=rounded" alt="jsdeliver">
     </a>
-    <a href="https://badge.fury.io/js/docsify-darklight-theme">
+    <a target="_blank" href="https://badge.fury.io/js/docsify-darklight-theme">
         <img src="https://badge.fury.io/js/docsify-darklight-theme.svg" alt="npm-version">
     </a>
-    <a href="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme">
+    <a target="_blank" href="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme">
         <img src="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme.svg" alt="GitHub version" height="20">
     </a>
 </p>
+
 
 
 <p align="center"> A Dark and light theme with switch for your docsify site</p>
@@ -108,10 +115,8 @@ In your **docsify config object** on `index.html` add the below object with your
                 borderColor : 'rgba(0, 0, 0, 0.07)'
             }
         }
-
-    };
-
 ```
+
 # Release notes
 
 View the [Change log](https://boopathikumar018.github.io/docsify-darklight-theme/#/changelog) to know the details of each versions.
@@ -119,5 +124,4 @@ View the [Change log](https://boopathikumar018.github.io/docsify-darklight-theme
 # License
 
 This project is licensed under the terms of the [MIT](https://github.com/boopathikumar018/docsify-darklight-theme/blob/master/LICENSE) license.
-
-
+ © [Boopathi Kumar](https://www.linkedin.com/in/boopathikumar)
