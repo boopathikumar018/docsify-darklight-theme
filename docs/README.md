@@ -1,10 +1,5 @@
 <h1 align="center"> docsify-darklight-theme </h1>
 
-<p align="center" >
-    <a target="_blank" href="https://boopathikumar018.github.io/docsify-darklight-theme/"> Docs | Preview</a>
-</p>
-
-
 <p align="center">
     <a href="https://www.jsdelivr.com/package/npm/docsify-darklight-theme">
         <img src="https://data.jsdelivr.com/v1/package/npm/docsify-darklight-theme/badge?style=rounded" alt="jsdeliver">
@@ -19,7 +14,7 @@
 
 
 
-<p align="center"> A Dark and light theme with switch for your docsify site</p>
+<p align="center"> Dark and Light theme with switch for your docsify site</p>
 
 # What it is
 
@@ -36,9 +31,9 @@ See the [Quick start](installation.md) guide for more details.
 - Themes are remembered and retrieved from local storage.
 - Redesigned search box.
 
-# Contributers
+# Contributors
 
-[@eswarijayakumar](https://github.com/eswarijayakumar)
+[@boopathikumar](https://github.com/boopathikumar018) [@eswarijayakumar](https://github.com/eswarijayakumar)
 
 # Release notes
 

@@ -84,7 +84,7 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	color: var(--textColor);
-	font-family: PT Sans, Helvetica Neue, Arial, sans-serif;
+	font-family: var(--siteFont), Helvetica Neue, Arial, sans-serif;
 	font-size: 17px;
 	letter-spacing: 0;
 	margin: 0;
