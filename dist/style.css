@@ -997,20 +997,19 @@ pre:after {
 
  /* toogler */
 
-#dark_mode {
+#docsify-darklight-theme {
 	position: absolute;
 	right: 0;
 	top: 0;
 	width: 25px;
     height: 25px;
 	background-repeat:no-repeat;
-	color: brown;
 	background-image: var(--themeIcon);
 	cursor: pointer;
 	-webkit-transition: background-image 0.15s ease-in-out 0.15s;
 	transition: background-image 0.15s ease-in-out 0.15s;
 }
 
-#dark_mode p {
+#docsify-darklight-theme p {
 	visibility: hidden;
 }

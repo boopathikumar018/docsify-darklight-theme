@@ -1,8 +1,8 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "0.0.14",
+  "version": "0.0.16",
   "description": "Enables docsify with dark and light mode with switch",
-  "main": "dist/index.js",
+  "main": "dist/index.min.js",
   "scripts": {
     "fixlint": "standard --fix",
     "test": "standard",
@@ -14,7 +14,8 @@
     "postinstall": "cpy dist ../../docsify-darklight-theme/"
   },
   "files": [
-    "dist"
+    "dist",
+    "icons"
   ],
   "keywords": [
     "docsify",
