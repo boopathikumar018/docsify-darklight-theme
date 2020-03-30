@@ -14,8 +14,7 @@
     "postinstall": "cpy dist ../../docsify-darklight-theme/"
   },
   "files": [
-    "dist",
-    "icons"
+    "dist"
   ],
   "keywords": [
     "docsify",
