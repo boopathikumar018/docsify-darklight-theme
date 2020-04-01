@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Sans&Roboto+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&Source+Sans+Pro&Roboto+Mono&display=swap");
 * {
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
@@ -999,8 +999,8 @@ pre:after {
  
  #docsify-darklight-theme {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 10px;
+    top: 10px;
 	border-radius: 50%;
 	background: var(--background);
     width: 27px;

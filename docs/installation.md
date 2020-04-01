@@ -1,13 +1,59 @@
 # Installation
 
+You can use `docsify-darklight-theme` [by starter template](installation.md#by-starter-template) or [by adding to your existing project](installation.md#by-adding-to-existing-project)
+
 > Note : Remove all default `stylesheets` provided by **docsify** that included on top of `index.html` if you have any conflict with below CSS file
 
-You can add `docsify-darklight-theme` in two ways :
+## By starter template
+
+Follow the below steps:
+
+In empty folder run the below commands
+
+```bash
+    npm init
+    npm install docsify-darklight-theme 
+```
+
+Now you can see `docsify-starter-darklight-theme` folder was created inside your project folder with below structure
+
+```text
+your project folder
+└── docsify-starter-darklight-theme
+    ├── index.html (the entry file)
+    ├── quickstart.md ( sidebar subpage)
+    ├── README.md ( home page)
+    ├── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
+    ├── _navbar.md ( navigation bar)
+    └── _sidebar.md ( sidebar)
+```
+
+and run the below command to start your project
+
+```bash
+    docsify serve ./docsify-starter-darklight-theme
+```
+
+you will see below output on terminal
+
+```bash
+
+Serving C:\Users\your_folder\docsify-starter-darklight-theme now.
+Listening at http://localhost:3000
+
+```
+
+now you can access your site at `http://localhost:3000`
+
+
+## By adding to existing project
+
+You can add `docsify-darklight-theme` to your existing project in two ways :
 
 - Using  **npm** ( For create custom style by your own )
 - Using **jsdelivr CDN** ( For readymade minified styles served through CDN)
 
-## Using npm
+### Using npm
 
 Follow the below steps:
 
@@ -18,37 +64,31 @@ Follow the below steps:
     npm install docsify-darklight-theme 
 ```
 
-Now you can see `docsify-darklight-theme` folder was created inside your project folder with below structure
+Now you can see `docsify-starter-darklight-theme` folder was created inside your project folder with below structure. If You want to move `style.css` file wherever you want and include in your `index.html` by matching the path.
 
 ```text
 your project folder
-└── docsify-darklight-theme
-    ├── index.min.js
-    ├── style.css ( you can add your own style or update here)
-    └── style.min.css
+└── docsify-starter-darklight-theme
+    ├── index.html
+    ├── quickstart.md 
+    ├── README.md
+    ├── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
+    ├── _navbar.md
+    └── _sidebar.md
 ```
 
-then add the `stylesheet` on top of `index.html` as shown below
+if you want it in same path add the `stylesheet` on top of `index.html` as shown below
 
 ```html
 <link 
     rel="stylesheet"
-    href="docsify-darklight-theme/style.css"
+    href="docsify-starter-darklight-theme/style.css"
     title="docsify-darklight-theme"
     type="text/css"
 />
 ```
 
-and add below `script` on bottom of the `index.html` file 
-
-```html
-<script 
-    src="docsify-darklight-theme/index.min.js"
-    type="text/javascript">
-</script>
-```
-
-## Using jsdelivr CDN
+### Using jsdelivr CDN
 
 If you don't want to do any customization and use default styling add below `stylesheet` on top of the `index.html` file
 

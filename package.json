@@ -1,6 +1,6 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "0.0.16",
+  "version": "0.0.18",
   "description": "Enables docsify with dark and light mode with switch",
   "main": "dist/index.min.js",
   "scripts": {
@@ -8,13 +8,14 @@
     "test": "standard",
     "prebuild": "del-cli dist",
     "build": "npm run build:css && npm run build:js",
-    "build:js": "rollup docs/js/index.js -o dist/index.min.js --config rollup.config.js && rollup docs/js/index.js -o docs/js/index.min.js --config rollup.config.js",
-    "build:css": "postcss docs/css/style.css -o dist/style.min.css --config postcss.config.js && postcss docs/css/style.css -o docs/css/style.min.css --config postcss.config.js",
-    "postbuild": "cpy docs/css/style.css dist/",
-    "postinstall": "cpy dist ../../docsify-darklight-theme/"
+    "build:js": "rollup docs/js/index.js -o dist/index.min.js --config rollup.config.js",
+    "build:css": "postcss docs/css/style.css -o dist/style.min.css --config postcss.config.js",
+    "postbuild": "cpy docs/css/style.css starter/css/",
+    "postinstall": "cpy starter ../../docsify-starter-darklight-theme/"
   },
   "files": [
-    "dist"
+    "dist",
+    "starter"
   ],
   "keywords": [
     "docsify",
@@ -22,7 +23,9 @@
     "dark-mode",
     "light-mode",
     "theme",
-    "docsify-plugin"
+    "docsify-plugin",
+    "template",
+    "docsify-starter"
   ],
   "author": "Boopathi Kumar <boopathikumar018@gmail.com>",
   "license": "MIT",

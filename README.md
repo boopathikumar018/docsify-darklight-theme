@@ -17,9 +17,11 @@
     </a>
 </p>
 
-
-
 <p align="center"> Dark and Light theme with switch for your docsify site</p>
+
+<p align="center" >
+    <a target="_blank" href="https://boopathikumar018.github.io/docsify-darklight-theme/#/installation"> view starter template installation guide</a>
+</p>
 
 # What it is
 
@@ -34,6 +36,7 @@ See the [Quick start](https://boopathikumar018.github.io/docsify-darklight-theme
 - Themes are customizable based on your color preferences
 - Preferences can be modified directly in `window.$docsify` configuration object
 - Default theme(Dark/Light) can be configured based on your needs.
+- Fonts can be configured through configuration object
 - Themes are remembered and retrieved from local storage.
 - Redesigned search box.
 

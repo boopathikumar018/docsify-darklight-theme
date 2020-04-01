@@ -13,13 +13,13 @@ In your **docsify config object** on `index.html` add the below object with your
         // ...
 
             darklightTheme: {
-
+                siteFont : 'PT Sans | Source Sans Pro',
                 defaultTheme : 'light | dark',
                 dark: {
-                    <your_variable> : <value>
+                    <your_css_variable> : <value>
                 },
                 light: {
-                    <your_variable> : <value>
+                    <your_css_variable> : <value>
                 }
 
             }
@@ -32,12 +32,14 @@ In your **docsify config object** on `index.html` add the below object with your
 
 ### Default themes configuration
 
+You can be overwrite directly in `window.$docsify` configuration object
+
 ```js
 
     window.$docsify = {
 
         darklightTheme: {
-
+            siteFont : 'PT Sans',
             defaultTheme : 'light',
             dark: {
                 background: '#091a28',

@@ -3,11 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>docsify-darklight-theme</title>
+  <title>Docsify Document</title>
   <link rel="icon" href="icon/favicon.ico">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <meta name="keywords" content="doc,docs,documentation,gitbook,creator,generator,github,jekyll,github-pages">
-  <meta name="description" content="For magical documentation generator with dark and light mode switch.">
+  <meta name="description" content="A magical documentation generator.">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link 
     rel="stylesheet"
@@ -26,7 +26,7 @@
   <div id="app">We are building somthing special for you ...</div>
   <script>
     window.$docsify = {
-      search: 'auto', // default
+      search: 'auto',
 
       search : [
         '/',
@@ -35,7 +35,7 @@
         function(hook) {
           var footer = [
             '<footer style="text-align: center;margin-top: 50px;">',
-            '<span> Made with <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="red" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> by <a href="https://www.linkedin.com/in/boopathikumar/" target="_blank">@boopathikumar</a>  &copy; 2020 </span>',
+            '<span> Your Project  &copy; 2020 </span>',
             '</footer>'
           ].join('');
 
@@ -44,6 +44,26 @@
           });
         }
       ],
+      darklightTheme : {
+        siteFont : "PT Sans",
+        defaultTheme : 'dark',
+        dark: {
+          toogleBackground : '#ffffff',
+          background: '#091a28',
+          textColor: '#b4b4b4',
+          codeTextColor : '#ffffff',
+          codeBackgroudColor : '#0e2233',
+          borderColor : '#0d2538',
+        },
+        light: {
+          toogleBackground : '#091a28',
+          background: '#ffffff',
+          textColor: '#34495e',
+          codeTextColor : '#525252',
+          codeBackgroudColor : '#f8f8f8',
+          borderColor : 'rgba(0, 0, 0, 0.07)',
+        }
+      },
       auto2top: true,
       executeScript: true,
       loadSidebar: true,
@@ -51,7 +71,7 @@
       mergeNavbar: true,
       maxLevel: 4,
       subMaxLevel: 3,
-      name: 'docsify-darklight-theme',
+      name: 'your_project_theme',
       search: {
         noData: {
           '/': 'No results!'
@@ -61,7 +81,6 @@
           '/': 'Search'
         }
       },
-      formatUpdated: '{MM}/{DD} {HH}:{mm}',
       
     }
   </script>
