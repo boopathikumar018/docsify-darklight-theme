@@ -25,10 +25,11 @@ See the [Quick start](installation.md) guide for more details.
 # Features
 
 - Theme switcher 
-- Themes are customizable based on your color preferences
+- Themes are customizable based on your color preferences.
+- Option for other plugins to support for (Dark/Light) mode. View [setup guide](themeSupport.md) here.
 - Preferences can be modified directly in `window.$docsify` configuration object
 - Default theme(Dark/Light) can be configured based on your needs.
-- Fonts can be configured through configuration object
+- Fonts can be configured through configuration object.
 - Themes are remembered and retrieved from local storage.
 - Redesigned search box.
 

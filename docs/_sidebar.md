@@ -2,6 +2,7 @@
 
   - [Installation](installation.md)
   - [Configuration](configuration.md)
+  - [Theme Support](themeSupport.md)
 
 - Others
 
