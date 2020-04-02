@@ -3,7 +3,7 @@
 
 Are you a plugin developer or theme designer of [docsify.js](https://docsify.js.org/#/) ? If you want your plugin UI to support `dark-mode` and `light-mode` with customizable colours for users who use your plugin with `docsify-darklight-theme` here you want to do
 
-## Desigining your stylesheet
+## Designing your stylesheet
 
 You need to use [CSS Variables](https://www.w3schools.com/css/css3_variables.asp) for your stylesheet design as follows.
 
