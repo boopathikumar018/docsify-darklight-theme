@@ -10,6 +10,9 @@
     <a href="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme">
         <img src="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme.svg" alt="GitHub version" height="20">
     </a>
+    <a href="https://opensource.org/licenses/MIT">
+        <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="licenses" height="20">
+    </a>
 </p>
 
 

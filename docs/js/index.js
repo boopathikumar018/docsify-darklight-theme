@@ -21,8 +21,7 @@ const plugin = (hook, vm) => {
     }
   }
 
-  let themeConfig = { ...vm.config.darklightTheme , ...defaultConfig }
-
+  let themeConfig = {  ...defaultConfig , ...vm.config.darklightTheme}
 
   document.documentElement.style.setProperty('--siteFont' , themeConfig.siteFont)
 
