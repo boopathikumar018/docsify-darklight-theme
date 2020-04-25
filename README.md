@@ -47,10 +47,11 @@ See the [Quick start](https://boopathikumar018.github.io/docsify-darklight-theme
 - Theme switcher 
 - Themes are customizable based on your color preferences
 - Option for other plugins to support for (Dark/Light) mode. View [setup guide](https://boopathikumar018.github.io/docsify-darklight-theme/#/themeSupport) here.
-- Preferences can be modified directly in `window.$docsify` configuration object
+- Preferences can be modified directly in `window.$docsify` [configuration object](https://boopathikumar018.github.io/docsify-darklight-theme/#/configuration)
 - Default theme(Dark/Light) can be configured based on your needs.
 - Fonts can be configured through configuration object
 - Themes are remembered and retrieved from local storage.
+- Cover page backgound color can be configured through configuration object.
 - Redesigned search box.
 
 # Contributors

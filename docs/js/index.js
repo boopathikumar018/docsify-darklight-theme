@@ -36,10 +36,21 @@ const plugin = (hook, vm) => {
     }
   }
 
-  let themeConfig = {  ...defaultConfig , ...vm.config.darklightTheme}
+  let themeConfig = defaultConfig;
 
-  document.documentElement.style.setProperty('--siteFont' , themeConfig.siteFont);
-  document.documentElement.style.setProperty('--codeFontFamily' , themeConfig.codeFontFamily);
+  for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
+    if(key !== 'light' && key !== 'dark') {
+      themeConfig[key] = value;
+      document.documentElement.style.setProperty('--'+key , value);
+    }
+  }
+
+  for (var [key, value] of Object.entries(vm.config.darklightTheme.dark)) {
+    themeConfig.dark[key] = value
+  }
+
+  for (var [key, value] of Object.entries(vm.config.darklightTheme.light))
+    themeConfig.light[key] = value 
 
   var setTheme = (theme) => {
 
@@ -54,25 +65,25 @@ const plugin = (hook, vm) => {
         document.documentElement.style.setProperty('--'+key , value)
     }
 
-    }
-  
-    hook.afterEach(function(html, next) {
-      var darkEl = `<div id="docsify-darklight-theme"><p>.</p></div>`
-      html = `${darkEl}${html}`
-      next(html)
-    })
-  
-    hook.doneEach(function() {
-      let savedTheme = localStorage.getItem('DARK_LIGHT_THEME')
-      if ( savedTheme == "light" || savedTheme == "dark") {
-        themeConfig.defaultTheme = savedTheme;
-        setTheme(themeConfig.defaultTheme)
-      } else {
-        setTheme(themeConfig.defaultTheme);
-      }
-
-      document.getElementById('docsify-darklight-theme').addEventListener('click', function() { themeConfig.defaultTheme === 'light' ? setTheme('dark') : setTheme('light')})
-    })
   }
   
-  window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins)
+  hook.afterEach(function(html, next) {
+    var darkEl = `<div id="docsify-darklight-theme"><p>.</p></div>`
+    html = `${darkEl}${html}`
+    next(html)
+  })
+  
+  hook.doneEach(function() {
+    let savedTheme = localStorage.getItem('DARK_LIGHT_THEME')
+    if ( savedTheme == "light" || savedTheme == "dark") {
+      themeConfig.defaultTheme = savedTheme;
+      setTheme(themeConfig.defaultTheme)
+    } else {
+      setTheme(themeConfig.defaultTheme);
+    }
+
+    document.getElementById('docsify-darklight-theme').addEventListener('click', function() { themeConfig.defaultTheme === 'light' ? setTheme('dark') : setTheme('light')})
+  })
+}
+  
+window.$docsify.plugins = [].concat(plugin, window.$docsify.plugins)

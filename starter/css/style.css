@@ -605,7 +605,7 @@ section.cover {
 
 section.cover.show {
 	display: flex;
-	background: var(--coverBackground)!;
+	background: var(--coverBackground)!important;
 }
 
 section.cover.has-mask .mask {
