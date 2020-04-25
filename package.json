@@ -1,6 +1,6 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Enables dark and light mode for docsify sites with switch",
   "main": "dist/index.min.js",
   "scripts": {
@@ -28,7 +28,11 @@
     "template",
     "docsify-starter"
   ],
-  "author": "Boopathi Kumar <boopathikumar018@gmail.com>",
+  "author": {
+    "name": "Boopathi Kumar",
+    "email": "boopathikumar018@gmail.com",
+    "url": "https://github.com/boopathikumar018"
+  },
   "license": "MIT",
   "standard": {
     "ignore": [

@@ -38,19 +38,35 @@ const plugin = (hook, vm) => {
 
   let themeConfig = defaultConfig;
 
-  for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
-    if(key !== 'light' && key !== 'dark') {
-      themeConfig[key] = value;
-      document.documentElement.style.setProperty('--'+key , value);
+ 
+ 
+  if(vm.config.hasOwnProperty("darklightTheme")) {
+    for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
+      if(key !== 'light' && key !== 'dark') {
+        themeConfig[key] = value;
+        document.documentElement.style.setProperty('--'+key , value);
+      }
+    }
+
+    if(vm.config.darklightTheme.hasOwnProperty("dark")) {
+      for (var [key, value] of Object.entries(vm.config.darklightTheme.dark)) {
+        themeConfig.dark[key] = value
+      }
+    }
+
+    if(vm.config.darklightTheme.hasOwnProperty("light")) {
+      for (var [key, value] of Object.entries(vm.config.darklightTheme.light))
+      themeConfig.light[key] = value 
+    }
+
+  } else {
+    for (var [key, value] of Object.entries(defaultConfig)) {
+      if(key !== 'light' && key !== 'dark') {
+        themeConfig[key] = value;
+        document.documentElement.style.setProperty('--'+key , value);
+      }
     }
   }
-
-  for (var [key, value] of Object.entries(vm.config.darklightTheme.dark)) {
-    themeConfig.dark[key] = value
-  }
-
-  for (var [key, value] of Object.entries(vm.config.darklightTheme.light))
-    themeConfig.light[key] = value 
 
   var setTheme = (theme) => {
 
