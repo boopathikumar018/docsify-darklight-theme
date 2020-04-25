@@ -3,27 +3,43 @@ const plugin = (hook, vm) => {
   var defaultConfig = {
     siteFont : "PT Sans",
     defaultTheme : 'dark',
+    codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
     dark: {
+      accent: '#42b983',
       toogleBackground : '#ffffff',
       background: '#091a28',
       textColor: '#b4b4b4',
       codeTextColor : '#ffffff',
       codeBackgroudColor : '#0e2233',
       borderColor : '#0d2538',
+      blockQuoteColour : '#858585',
+      highlightColor : '#d22778',
+      sidebarSublink : '#b4b4b4',
+      codeTypeColor : '#ffffff',
+      coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+      toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/sun.svg)'
     },
     light: {
+      accent: '#42b983',
       toogleBackground : '#091a28',
       background: '#ffffff',
       textColor: '#34495e',
       codeTextColor : '#525252',
       codeBackgroudColor : '#f8f8f8',
       borderColor : 'rgba(0, 0, 0, 0.07)',
+      blockQuoteColor : '#858585',
+      highlightColor : '#d22778',
+      sidebarSublink : '#b4b4b4',
+      codeTypeColor : '#091a28',
+      coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
+      toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
     }
   }
 
   let themeConfig = {  ...defaultConfig , ...vm.config.darklightTheme}
 
-  document.documentElement.style.setProperty('--siteFont' , themeConfig.siteFont)
+  document.documentElement.style.setProperty('--siteFont' , themeConfig.siteFont);
+  document.documentElement.style.setProperty('--codeFontFamily' , themeConfig.codeFontFamily);
 
   var setTheme = (theme) => {
 
@@ -41,7 +57,7 @@ const plugin = (hook, vm) => {
     }
   
     hook.afterEach(function(html, next) {
-      var darkEl = `<button id="docsify-darklight-theme"></button>`
+      var darkEl = `<div id="docsify-darklight-theme"><p>.</p></div>`
       html = `${darkEl}${html}`
       next(html)
     })

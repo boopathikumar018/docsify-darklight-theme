@@ -1,3 +1,6 @@
+<h1 align="center">
+    <img src="docsify-darklight-theme-logo.png" style="width: 160px;height: 100px;" alt="jsdeliver"> 
+</h1>
 <h1 align="center"> docsify-darklight-theme </h1>
 
 <p align="center">
@@ -6,6 +9,9 @@
     </a>
     <a href="https://badge.fury.io/js/docsify-darklight-theme">
         <img src="https://badge.fury.io/js/docsify-darklight-theme.svg" alt="npm-version">
+    </a>
+    <a href="https://badge.fury.io/js/docsify-darklight-theme">
+        <img src="https://img.shields.io/badge/dynamic/json?url=https://api.npmjs.org/downloads/point/2020-01-01:2050-01-01/docsify-darklight-theme&label=npm%20downloads&query=$.downloads&color=informational" alt="npm-downloads">
     </a>
     <a href="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme">
         <img src="https://badge.fury.io/gh/boopathikumar018%2Fdocsify-darklight-theme.svg" alt="GitHub version" height="20">
