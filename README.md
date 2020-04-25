@@ -1,8 +1,12 @@
-<h1 align="center"> docsify-darklight-theme </h1>
 
-<div align="center">
-    <img src="icons/darklight-theme-logo.png" style="width: 160px;height: 100px;" alt="jsdeliver"> 
-</div></br>
+<p align="center">
+    <a href="https://boopathikumar018.github.io/docsify-darklight-theme">
+        <img src="https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/docsify-darklight-theme-logo.png" style="width: 160px;height: 100px;" alt="jsdeliver"> 
+    </a>
+</p>
+<p align="center"> 
+    <b>docsify-darklight-theme</b>
+</p>    
 <p align="center" >
     <a target="_blank" href="https://boopathikumar018.github.io/docsify-darklight-theme/"> Docs | Preview</a>
 </p>

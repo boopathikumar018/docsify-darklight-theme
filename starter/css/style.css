@@ -709,7 +709,8 @@ section.cover blockquote>p>a:hover {
 
 .sidebar,
 body {
-	background-color: var(--background)
+	background-color: var(--background);
+	transition: background-image .15s ease-in-out .15s;
 }
 
 .sidebar {
@@ -1000,12 +1001,16 @@ pre:after {
 
  #docsify-darklight-theme {
 	position: absolute;
-	right: 0;
-	top: 0;
+	right: 10px;
+    top: 15px;
 	width: 25px;
 	height: 25px;
 	background-repeat: no-repeat;
 	background-image: var(--toogleImage);
+	-o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size:cover;
+    background-size: cover;
 	cursor: pointer;
 	transition: background-image .15s ease-in-out .15s
 }
