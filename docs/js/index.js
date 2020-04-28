@@ -68,6 +68,8 @@ const plugin = (hook, vm) => {
     }
   }
 
+  console.log(themeConfig);
+
   var setTheme = (theme) => {
 
     localStorage.setItem('DARK_LIGHT_THEME', theme);
