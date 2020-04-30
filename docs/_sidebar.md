@@ -5,5 +5,5 @@
   - [Theme Support](themeSupport.md)
 
 - Others
-
+  - [Showcase](showcase.md)
   - [Changelog](changelog.md)

@@ -2,6 +2,10 @@
 
 You can configure the colors for light and dark mode using **docsify config object** as follows.
 
+### Default browser theme detection
+
+`docsify-darklight-theme` will automatically **detect default theme used by browser** (only supported browsers) and set theme to your website accordingly. In non-supported browsers, theme which you are mentioned in config variable `defaultTheme` inside `darklightTheme` configuration object will be applied otherwise it will set `dark theme` as default theme. If the user changes the theme and it will be saved. When they open the website again saved theme will be served. You can follow below steps for configuration.
+
 ### Variable structure
 
 In your **docsify config object** on `index.html` add the below object with your own variables as follows:

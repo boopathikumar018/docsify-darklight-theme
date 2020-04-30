@@ -2,7 +2,7 @@ const plugin = (hook, vm) => {
   
   var defaultConfig = {
     siteFont : "PT Sans",
-    defaultTheme : 'dark',
+    defaultTheme : 'light',
     codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
     dark: {
       accent: '#42b983',
@@ -38,11 +38,11 @@ const plugin = (hook, vm) => {
 
   let themeConfig = defaultConfig;
 
- 
+  themeConfig.defaultTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
  
   if(vm.config.hasOwnProperty("darklightTheme")) {
     for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
-      if(key !== 'light' && key !== 'dark') {
+      if(key !== 'light' && key !== 'dark' && key !== 'defaultTheme') {
         themeConfig[key] = value;
         document.documentElement.style.setProperty('--'+key , value);
       }

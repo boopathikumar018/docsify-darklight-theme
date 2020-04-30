@@ -19,26 +19,27 @@ Now you can see `docsify-starter-darklight-theme` folder was created inside your
 
 ```text
 your project folder
-└── docsify-starter-darklight-theme
+└── docs
     ├── index.html (the entry file)
     ├── quickstart.md ( sidebar subpage)
     ├── README.md ( home page)
-    ├── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
     ├── _navbar.md ( navigation bar)
-    └── _sidebar.md ( sidebar)
+    ├── _sidebar.md ( sidebar)
+    └── css
+        └── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
 ```
 
 and run the below command to start your project
 
 ```bash
-    docsify serve ./docsify-starter-darklight-theme
+    docsify serve ./docs
 ```
 
 you will see below output on terminal
 
 ```bash
 
-Serving C:\Users\your_folder\docsify-starter-darklight-theme now.
+Serving C:\Users\your_folder\docs now.
 Listening at http://localhost:3000
 
 ```
