@@ -40,6 +40,8 @@ const plugin = (hook, vm) => {
 
   themeConfig.defaultTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
  
+  themeConfig.defaultTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? alert("Browser mode detected DARK") : alert("Browser mode detected LIGHT");
+
   if(vm.config.hasOwnProperty("darklightTheme")) {
     for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
       if(key !== 'light' && key !== 'dark' && key !== 'defaultTheme') {
@@ -67,8 +69,6 @@ const plugin = (hook, vm) => {
       }
     }
   }
-
-  console.log(themeConfig);
 
   var setTheme = (theme) => {
 
