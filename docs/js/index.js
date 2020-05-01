@@ -2,7 +2,7 @@ const plugin = (hook, vm) => {
   
   var defaultConfig = {
     siteFont : "PT Sans",
-    defaultTheme : 'light',
+    defaultTheme : 'dark',
     codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
     dark: {
       accent: '#42b983',
@@ -38,9 +38,15 @@ const plugin = (hook, vm) => {
 
   let themeConfig = defaultConfig;
 
-  themeConfig.defaultTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? 'dark' : 'light';
- 
-  themeConfig.defaultTheme = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? alert("Browser mode detected DARK") : alert("Browser mode detected LIGHT");
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    themeConfig.defaultTheme = 'dark';
+    alert("testing : Browser mode detected DARK")
+  } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+    themeConfig.defaultTheme = 'light';
+    alert("testing : Browser mode detected LIGHT")
+  } else {
+    alert("testing : No Browser mode detected setting default theme")
+  }
 
   if(vm.config.hasOwnProperty("darklightTheme")) {
     for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
@@ -62,7 +68,7 @@ const plugin = (hook, vm) => {
     }
 
   } else {
-    for (var [key, value] of Object.entries(defaultConfig)) {
+    for (var [key, value] of Object.entries(themeConfig)) {
       if(key !== 'light' && key !== 'dark') {
         themeConfig[key] = value;
         document.documentElement.style.setProperty('--'+key , value);
