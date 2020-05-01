@@ -601,10 +601,10 @@ section.cover {
 	background-size: cover;
 	height: 100vh;
 	display: none
+	
 }
 
 section.cover.show {
-	display: flex;
 	background: var(--coverBackground)!important;
 }
 

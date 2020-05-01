@@ -38,19 +38,15 @@ const plugin = (hook, vm) => {
 
   let themeConfig = defaultConfig;
 
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    themeConfig.defaultTheme = 'dark';
-    alert("testing : Browser mode detected DARK")
-  } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
-    themeConfig.defaultTheme = 'light';
-    alert("testing : Browser mode detected LIGHT")
-  } else {
-    alert("testing : No Browser mode detected setting default theme")
-  }
-
   if(vm.config.hasOwnProperty("darklightTheme")) {
     for (var [key, value] of Object.entries(vm.config.darklightTheme)) {
       if(key !== 'light' && key !== 'dark' && key !== 'defaultTheme') {
+        themeConfig[key] = value;
+      }
+    }
+
+    for (var [key, value] of Object.entries(themeConfig)) {
+      if(key !== 'light' && key !== 'dark') {
         themeConfig[key] = value;
         document.documentElement.style.setProperty('--'+key , value);
       }
@@ -74,6 +70,12 @@ const plugin = (hook, vm) => {
         document.documentElement.style.setProperty('--'+key , value);
       }
     }
+  }
+
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    themeConfig.defaultTheme = 'dark';
+  } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+    themeConfig.defaultTheme = 'light';
   }
 
   var setTheme = (theme) => {

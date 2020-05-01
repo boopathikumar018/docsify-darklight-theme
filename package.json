@@ -1,6 +1,6 @@
 {
   "name": "docsify-darklight-theme",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Enables dark and light mode for docsify sites with switch",
   "main": "dist/index.min.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "build:js": "rollup docs/js/index.js -o dist/index.min.js --config rollup.config.js",
     "build:css": "postcss docs/css/style.css -o dist/style.min.css --config postcss.config.js",
     "postbuild": "cpy docs/css/style.css starter/css/",
-    "postinstall": "cpy starter ../../docs/"
+    "postinstall": "cpy starter ../../docs/ --dot"
   },
   "files": [
     "dist",

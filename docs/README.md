@@ -33,7 +33,8 @@ See the [Quick start](installation.md) guide for more details.
 
 # Features
 
-- Default [theme mode detection](configuration.md#default-browser-theme-detection) in supported browser versions.
+> Default [theme mode detection](configuration.md#default-browser-theme-detection) in supported browser versions.
+
 - Theme Switcher.
 - Themes are customizable based on your color preferences.
 - Option for other plugins to support for (Dark/Light) mode. View [setup guide](themeSupport.md) here.
@@ -45,7 +46,7 @@ See the [Quick start](installation.md) guide for more details.
 
 # Contributors
 
-[@boopathikumar](https://github.com/boopathikumar018) [@eswarijayakumar](https://github.com/eswarijayakumar)
+[@boopathikumar](https://boopathikumar.me) [@eswarijayakumar](https://github.com/eswarijayakumar)
 
 # Showcase
 
@@ -64,4 +65,4 @@ View the [Change log](changelog.md) to know the details of each versions.
 # License
 
 This project is licensed under the terms of the [MIT](https://github.com/boopathikumar018/docsify-darklight-theme/blob/master/LICENSE) license.
- © [Boopathi Kumar](https://www.linkedin.com/in/boopathikumar)
+ © [Boopathi Kumar](https://boopathikumar.me)
