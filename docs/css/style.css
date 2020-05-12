@@ -85,7 +85,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 	color: var(--textColor);
 	font-family: var(--siteFont), Helvetica Neue, Arial, sans-serif;
-	font-size: 17px;
+	font-size: var(--bodyFontSize);
 	letter-spacing: 0;
 	margin: 0;
 	overflow-x: hidden;
@@ -601,10 +601,10 @@ section.cover {
 	background-size: cover;
 	height: 100vh;
 	display: none
-	
 }
 
 section.cover.show {
+	display: flex;
 	background: var(--coverBackground)!important;
 }
 

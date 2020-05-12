@@ -15,11 +15,11 @@ In empty folder run the below commands
     npm install docsify-darklight-theme 
 ```
 
-Now you can see `docsify-starter-darklight-theme` folder was created inside your project folder with below structure
+Now you can see `documentation` folder was created inside your project folder with below structure
 
 ```text
 your project folder
-└── docs
+└── documentation
     ├── index.html (the entry file)
     ├── quickstart.md ( sidebar subpage)
     ├── README.md ( home page)
@@ -32,14 +32,14 @@ your project folder
 and run the below command to start your project
 
 ```bash
-    docsify serve ./docs
+    docsify serve ./documentation
 ```
 
 you will see below output on terminal
 
 ```bash
 
-Serving C:\Users\your_folder\docs now.
+Serving C:\Users\your_folder\documentation now.
 Listening at http://localhost:3000
 
 ```
@@ -65,11 +65,11 @@ Follow the below steps:
     npm install docsify-darklight-theme 
 ```
 
-Now you can see `docsify-starter-darklight-theme` folder was created inside your project folder with below structure. If You want to move `style.css` file wherever you want and include in your `index.html` by matching the path.
+Now you can see `documentation` folder was created inside your project folder with below structure. If You want to move `style.css` file wherever you want and include in your `index.html` by matching the path.
 
 ```text
 your project folder
-└── docsify-starter-darklight-theme
+└── documentation
     ├── index.html
     ├── quickstart.md 
     ├── README.md
@@ -83,7 +83,7 @@ if you want it in same path add the `stylesheet` on top of `index.html` as shown
 ```html
 <link 
     rel="stylesheet"
-    href="docsify-starter-darklight-theme/style.css"
+    href="documentation/style.css"
     title="docsify-darklight-theme"
     type="text/css"
 />

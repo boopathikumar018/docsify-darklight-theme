@@ -44,7 +44,7 @@ See the [Quick start](https://docsify-darklight-theme.boopathikumar.me/#/install
 
 # Features
 
-- Default [theme mode detection](configuration.md#default-browser-theme-detection) in supported browser versions.
+- Default [theme mode detection](https://docsify-darklight-theme.boopathikumar.me/#/configuration?id=default-browser-theme-detection) in supported browser versions.
 - Theme Switcher.
 - Themes are customizable based on your color preferences.
 - Option for other plugins to support for (Dark/Light) mode. View [setup guide](https://docsify-darklight-theme.boopathikumar.me/#/themeSupport) here.
@@ -56,7 +56,7 @@ See the [Quick start](https://docsify-darklight-theme.boopathikumar.me/#/install
 
 # Contributors
 
-[@boopathikumar](https://github.com/boopathikumar018) [@eswarijayakumar](https://github.com/eswarijayakumar)
+[@boopathikumar](https://boopathikumar.me) [@eswarijayakumar](https://github.com/eswarijayakumar)
 
 # Showcase
 
@@ -70,10 +70,10 @@ View the [Change log](https://docsify-darklight-theme.boopathikumar.me/#/changel
 
 - Create a [GitHub issue](https://github.com/boopathikumar018/docsify-darklight-theme/issues) for bug reports, feature requests, or questions
 - Follow [@docsify-darklight-theme](https://twitter.com/docsifyDrkLtThm) for announcements and release updates.
-- Add a ⭐️ [star on GitHub](https://github.com/boopathikumar018/docsify-darklight-theme) or <svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 24" fill="red" stroke="red" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> [tweet](https://twitter.com/intent/tweet?url=https%3A%2F%2Fgithub.com%boopathikumar018%2Fdocsify-darklight-theme&hashtags=css,docsify.js,darktheme,frontend,javascript) to support the plugin!
+- Add a ⭐️ [star on GitHub](https://github.com/boopathikumar018/docsify-darklight-theme) to support the plugin!
 
 
 # License
 
 This project is licensed under the terms of the [MIT](https://github.com/boopathikumar018/docsify-darklight-theme/blob/master/LICENSE) license.
- © [Boopathi Kumar](https://www.linkedin.com/in/boopathikumar)
+ © [Boopathi Kumar](https://boopathikumar.me)

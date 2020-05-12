@@ -47,6 +47,7 @@ You can be overwrite directly in `window.$docsify` configuration object
             siteFont : "PT Sans",
             defaultTheme : 'dark',
             codeFontFamily : 'Roboto Mono, Monaco, courier, monospace',
+            bodyFontSize : '17px',
             dark: {
                 accent: '#42b983',
                 toogleBackground : '#ffffff',
