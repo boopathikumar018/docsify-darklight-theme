@@ -762,7 +762,8 @@ body {
 
 .markdown-section a {
 	color: var(--accent);
-	font-weight: 600
+	font-weight: 600;
+	text-decoration: none;
 }
 
 .markdown-section h1 {

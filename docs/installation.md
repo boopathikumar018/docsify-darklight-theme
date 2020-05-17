@@ -25,8 +25,8 @@ your project folder
     ├── README.md ( home page)
     ├── _navbar.md ( navigation bar)
     ├── _sidebar.md ( sidebar)
-    └── css
-        └── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
+    ├── _coverpage.md ( coverpage)
+    └── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
 ```
 
 and run the below command to start your project
@@ -71,8 +71,9 @@ Now you can see `documentation` folder was created inside your project folder wi
 your project folder
 └── documentation
     ├── index.html
-    ├── quickstart.md 
+    ├── quickstart.md
     ├── README.md
+    ├── _coverpage.md
     ├── style.css ( you can add your own style or update here then update stylesheet path in `index.html` )
     ├── _navbar.md
     └── _sidebar.md
