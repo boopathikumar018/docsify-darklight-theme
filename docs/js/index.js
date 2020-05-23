@@ -110,6 +110,20 @@ const plugin = (hook, vm) => {
     }
 
     document.getElementById('docsify-darklight-theme').addEventListener('click', function() { themeConfig.defaultTheme === 'light' ? setTheme('dark') : setTheme('light')})
+
+    // Side menu tooltip
+    let title, action;
+    document.querySelectorAll(".sidebar-nav .section-link").forEach(menu => {
+
+      title = menu.innerText;
+      action = menu.getAttribute("href");
+      menu.parentElement.innerHTML = `<div class="tooltip">
+          <span class="tooltiptext">${title}</span>
+          <a class="section-link" href="${action}">${title}</a>
+        </div>`;
+
+    });
+
   })
 }
   
