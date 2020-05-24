@@ -27,26 +27,27 @@
 
 # What it is
 
-**docsify-darklight-theme**  is a simple and highly customizable theme for the documentation websites generated using [docsify.js](https://docsify.js.org/). Using this theme, documents will have a theme switcher to switch between <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> `dark-mode` and <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> `light-mode` .
+**docsify-darklight-theme**  is a simple and highly customizable theme for the documentation websites generated using [docsify.js](https://docsify.js.org/) ( also with [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/) ). Using this theme, documents will have a theme switcher to switch between <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg> `dark-mode` and <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="#ffffff" stroke="#34495e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg> `light-mode` .
 
 See the [Quick start](installation.md) guide for more details.
 
 # Features
 
-> Default [theme mode detection](configuration.md#default-browser-theme-detection) in supported browser versions.
-
+- Default [theme mode detection](configuration.md#default-browser-theme-detection) in supported browser versions.
 - Theme Switcher.
+- Switcher support for [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/). View [setup guide](docsifyThemeable.md) here.
+- Tooltip view for long sidebar items.
 - Themes are customizable based on your color preferences.
-- Option for other plugins to support for (Dark/Light) mode. View [setup guide](themeSupport.md) here.
+- Option for other plugins to support (Dark/Light) mode. View [setup guide](themeSupport.md) here.
 - Preferences can be modified directly in `window.$docsify` [configuration object](configuration.md).
-- Toogle icons can be configured based on your preference using [configuration object](configuration.md).
+- Using [configuration object](configuration.md) toogle icons can be configured based on your preference.
 - Default theme(Dark/Light) can be configured based on your needs.
 - Themes are remembered and retrieved from local storage.
 - Redesigned search box.
 
 # Contributors
 
-[@boopathikumar](https://boopathikumar.me) [@eswarijayakumar](https://github.com/eswarijayakumar)
+[@boopathikumar](//boopathikumar.me) [@eswarijayakumar](https://github.com/eswarijayakumar) [@kumaravel](//kumaravel.me)
 
 # Showcase
 
