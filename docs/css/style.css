@@ -1012,6 +1012,7 @@ pre:after {
     -webkit-background-size:cover;
     background-size: cover;
 	cursor: pointer;
+	user-select: none;
 	transition: background-image .15s ease-in-out .15s
 }
 
