@@ -52,7 +52,6 @@ See the [Quick start](https://docsify-darklight-theme.boopathikumar.me/#/install
 - Option for other plugins to support (Dark/Light) mode. View [setup guide](https://docsify-darklight-theme.boopathikumar.me/#/themeSupport) here.
 - Preferences can be modified directly in `window.$docsify` [configuration object](https://docsify-darklight-theme.boopathikumar.me/#/configuration).
 - Using [configuration object](https://docsify-darklight-theme.boopathikumar.me/#/configuration)toogle icons can be configured based on your preference.
-- Default theme(Dark/Light) can be configure.
 - Default theme(Dark/Light) can be configured based on your needs.
 - Themes are remembered and retrieved from local storage.
 - Redesigned search box.
