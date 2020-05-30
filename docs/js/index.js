@@ -30,7 +30,7 @@ const plugin = (hook, vm) => {
       borderColor : 'rgba(0, 0, 0, 0.07)',
       blockQuoteColor : '#858585',
       highlightColor : '#d22778',
-      sidebarSublink : '#b4b4b4',
+      sidebarSublink : '#505d6b',
       codeTypeColor : '#091a28',
       coverBackground : 'linear-gradient(to left bottom, hsl(118, 100%, 85%) 0%,hsl(181, 100%, 85%) 100%)',
       toogleImage : 'url(https://cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/icons/moon.svg)'
@@ -112,17 +112,17 @@ const plugin = (hook, vm) => {
     document.getElementById('docsify-darklight-theme').addEventListener('click', function() { themeConfig.defaultTheme === 'light' ? setTheme('dark') : setTheme('light')})
 
     // Side menu tooltip
-    let title, action;
-    document.querySelectorAll(".sidebar-nav .section-link").forEach(menu => {
+    // let title, action;
+    // document.querySelectorAll(".sidebar-nav .section-link").forEach(menu => {
 
-      title = menu.innerText;
-      action = menu.getAttribute("href");
-      menu.parentElement.innerHTML = `<div class="tooltip">
-          <span class="tooltiptext">${title}</span>
-          <a class="section-link" href="${action}">${title}</a>
-        </div>`;
+    //   title = menu.innerText;
+    //   action = menu.getAttribute("href");
+    //   menu.parentElement.innerHTML = `<div class="tooltip">
+    //       <span class="tooltiptext">${title}</span>
+    //       <a class="section-link" href="${action}">${title}</a>
+    //     </div>`;
 
-    });
+    // });
 
   })
 }

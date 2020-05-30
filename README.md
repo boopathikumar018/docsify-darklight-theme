@@ -47,7 +47,6 @@ See the [Quick start](https://docsify-darklight-theme.boopathikumar.me/#/install
 - Default [theme mode detection](https://docsify-darklight-theme.boopathikumar.me/#/configuration?id=default-browser-theme-detection) in supported browser versions.
 - Theme Switcher.
 - Switcher support for [docsify-themeable](https://jhildenbiddle.github.io/docsify-themeable/#/). View [setup guide](https://docsify-darklight-theme.boopathikumar.me/#/docsifyThemeable) here.
-- Tooltip view for long sidebar items.
 - Themes are customizable based on your color preferences.
 - Option for other plugins to support (Dark/Light) mode. View [setup guide](https://docsify-darklight-theme.boopathikumar.me/#/themeSupport) here.
 - Preferences can be modified directly in `window.$docsify` [configuration object](https://docsify-darklight-theme.boopathikumar.me/#/configuration).

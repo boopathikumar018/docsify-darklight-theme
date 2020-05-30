@@ -1021,7 +1021,7 @@ pre:after {
 	visibility: hidden
 }
 
-.tooltip {
+/* .tooltip {
 	position: relative;
 }
 
@@ -1052,4 +1052,4 @@ pre:after {
 
 .tooltip .tooltiptext:hover {
 	visibility: hidden;
-}
+} */

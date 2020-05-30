@@ -58,7 +58,7 @@ You can add `docsify-darklight-theme` to your existing project in two ways :
 
 Follow the below steps:
 
-1. Move inside your docsify site folder and initilize npm with below command
+1. Move inside your docsify site folder and initialize npm with below command
 
 ```bash
     npm init
