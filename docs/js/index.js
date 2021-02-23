@@ -92,6 +92,8 @@ const plugin = (hook, vm) => {
         document.documentElement.style.setProperty('--'+key , value)
     }
 
+    document.documentElement.style.setProperty('color-scheme', theme)
+
   }
   
   hook.afterEach(function(html, next) {
