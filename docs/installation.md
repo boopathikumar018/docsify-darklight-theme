@@ -11,8 +11,7 @@ Follow the below steps:
 In empty folder run the below commands
 
 ```bash
-    npm init
-    npm install docsify-darklight-theme 
+    npx docsify-darklight-theme 
 ```
 
 Now you can see `documentation` folder was created inside your project folder with below structure
