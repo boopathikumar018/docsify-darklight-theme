@@ -49,18 +49,16 @@
   "repository": "boopathikumar018/docsify-darklight-theme",
   "homepage": "docsify-darklight-theme.boopathikumar.me",
   "devDependencies": {
-    "autoprefixer": "^9.7.4",
-    "cssnano": "^4.1.10",
-    "del-cli": "^3.0.0",
-    "postcss": "^7.0.26",
-    "postcss-cli": "^7.1.0",
+    "autoprefixer": "^9.8.6",
+    "cpy-cli": "^3.1.1",
+    "cssnano": "^4.1.11",
+    "del-cli": "^3.0.1",
+    "postcss": "^7.0.35",
+    "postcss-cli": "^7.1.2",
     "postcss-preset-env": "^6.7.0",
     "rollup": "^1.31.1",
-    "rollup-plugin-terser": "^5.2.0",
-    "standard": "^14.3.1",
-    "cpy-cli": "^3.1.0"
+    "rollup-plugin-terser": "^5.3.1",
+    "standard": "^14.3.4"
   },
-  "dependencies": {
-    "cpy-cli": "^3.1.0"
-  }
+  "dependencies": {}
 }
