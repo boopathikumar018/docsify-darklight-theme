@@ -58,7 +58,7 @@ You can be overwrite directly in `window.$docsify` configuration object
                 codeTextColor : '#ffffff',
                 codeBackgroundColor : '#0e2233',
                 borderColor : '#0d2538',
-                blockQuoteColour : '#858585',
+                blockQuoteColor : '#858585',
                 highlightColor : '#d22778',
                 sidebarSublink : '#b4b4b4',
                 codeTypeColor : '#ffffff',
