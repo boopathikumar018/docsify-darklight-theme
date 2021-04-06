@@ -427,7 +427,7 @@ body.sticky .sidebar-toggle {
 
 .markdown-section p.tip,
 .markdown-section tr:nth-child(2n) {
-	background-color: var(--codeBackgroudColor)
+	background-color: var(--codeBackgroundColor)
 }
 
 .markdown-section p.tip {
@@ -835,7 +835,7 @@ body {
 
 .markdown-section code,
 .markdown-section pre {
-	background-color: var(--codeBackgroudColor);
+	background-color: var(--codeBackgroundColor);
 	font-family: var(--codeFontFamily);
 }
 
@@ -949,7 +949,7 @@ body {
 .markdown-section pre>code {
 	-moz-osx-font-smoothing: initial;
 	-webkit-font-smoothing: initial;
-	background-color: var(--codeBackgroudColor);
+	background-color: var(--codeBackgroundColor);
 	border-radius: 2px;
 	color: var(--codeTextColor);
 	display: block;
