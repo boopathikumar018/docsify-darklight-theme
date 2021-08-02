@@ -76,10 +76,14 @@ const plugin = (hook, vm) => {
             document.documentElement.style.setProperty('--'+key , value)
       }
   
+
+      document.getElementById('docsify-darklight-theme')
+        .setAttribute('aria-pressed', theme === 'dark');
+
     }
     
     hook.afterEach(function(html, next) {
-      var darkEl = `<div id="docsify-darklight-theme"><p>.</p></div>`
+      var darkEl = `<button id="docsify-darklight-theme" aria-label="Dark mode"></button>`
       html = `${darkEl}${html}`
       next(html)
     })

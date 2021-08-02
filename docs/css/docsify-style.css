@@ -993,6 +993,8 @@ pre:after {
  /* toogler */
 
  #docsify-darklight-theme {
+    border: none;
+    background-color: transparent;
 	position: absolute;
 	right: 10px;
     top: 15px;
@@ -1006,8 +1008,4 @@ pre:after {
     background-size: cover;
 	cursor: pointer;
 	transition: background-image .15s ease-in-out .15s
-}
-
-#docsify-darklight-theme p {
-	visibility: hidden
 }
