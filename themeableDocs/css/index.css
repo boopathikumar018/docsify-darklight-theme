@@ -1,6 +1,8 @@
  /* toogler */
 
  #docsify-darklight-theme {
+	border: none;
+	background-color: transparent;
 	position: absolute;
 	right: -13px;
     top: 75px;
@@ -14,8 +16,4 @@
     background-size: cover;
 	cursor: pointer;
 	transition: background-image .15s ease-in-out .15s
-}
-
-#docsify-darklight-theme p {
-	visibility: hidden
 }

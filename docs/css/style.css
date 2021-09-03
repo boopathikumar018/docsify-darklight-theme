@@ -1001,6 +1001,8 @@ pre:after {
  /* toogler */
 
  #docsify-darklight-theme {
+    border: none;
+    background-color: transparent;
 	position: absolute;
 	right: 10px;
     top: 15px;
@@ -1015,10 +1017,6 @@ pre:after {
 	cursor: pointer;
 	user-select: none;
 	transition: background-image .15s ease-in-out .15s
-}
-
-#docsify-darklight-theme p {
-	visibility: hidden
 }
 
 /* .tooltip {
