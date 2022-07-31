@@ -27,7 +27,11 @@
     <a href="https://opensource.org/licenses/MIT">
         <img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="licenses" height="20">
     </a>
+    <a href="https://opensource.org/licenses/MIT](https://openbase.com/js/docsify-darklight-theme?utm_source=embedded&amp;utm_medium=badge&amp;utm_campaign=rate-badge">
+        <img src="https://badges.openbase.com/js/featured/docsify-darklight-theme.svg?token=+xA+fO9IYyLQgXpy7PVro8oVO/vjz9TY5sNmJKtn8W8=" alt="Featured on Openbase" height="20">
+    </a>
 </p>
+
 
 <p align="center"> Dark and Light theme with switch for your docsify site</p>
 
