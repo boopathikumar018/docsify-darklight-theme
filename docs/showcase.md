@@ -7,3 +7,4 @@
  - [osu-coffee-docs](https://xn--osu-caf-hya.wtf/coffee/docs/#/)
  - [sweeter.io](https://sweeter.io)
  - [unthink-cli](https://epandco.github.io/unthink-cli)
+ - [lychee](https://lychee.cli.rs)
